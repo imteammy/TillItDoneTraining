@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+html {
+  font-size: 16px !important;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  margin: 50px 25% 50px 25%;
+  justify-content: center;
+}
+
+.from-control {
+  display: flex;
+  column-gap: 25px;
+  margin: 0 0 25px 0;
+}
+
+/*! Searchbar  */
+/** .form-search.active button              */
+/** .form-search.active .btn-submit         */
+/** .form-search.active button.btn-submit   */
+
+.form-search.active .btn-submit {
+  background-color: yellow;
+  color: black;
+  border: 1px solid black;
+  font-weight: bold;
+}
+
+/*! card */
+/** card.active */
+/** div.card.active */
+.card.active  {
+  background-color: purple;
+}
+/**   .card.active .title   */
+/**   .card.active h1.title */
+/**   .card.active > h1.title */
+/**   .card.active > .content > .title */
+/**   .card.active .content .title */
+/**   .card.active .content h1.title  */
+
+.card.active .content .title {
+  color: green;
+}
+
+input {
+  width: 70%;
+  font-size: 1rem;
+  border-radius: 1.2rem;
+  padding: 1rem 1rem 1rem 2rem;
+
+  border: 2px solid #d9d9d9;
+}
+
+input::placeholder {
+  color: #000000;
+  opacity: 40%;
+}
+button {
+  width: 30%;
+  font-size: 1rem;
+  padding: 1rem;
+  border: none;
+  border-radius: 1.2rem;
+  color: white;
+  background-color: #482fe2;
+}
+
+/** Container */
+@media (max-width: 992px) {
+  .container {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+  input {
+    width: 60%;
+  }
+  button {
+    width: 40%;
+  }
+}
+
+.wrapper {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.column {
+  margin: 0 25% 0 25%;
+}
+
+/** Wrapper Column */
+@media (max-width: 992px) {
+  .wrapper {
+    margin-bottom: 15%;
+    grid-template-columns: auto auto;
+  }
+  .column {
+    margin: 0 15% 0 15%;
+  }
+}
+@media (max-width: 576px) {
+  .wrapper {
+    grid-template-columns: auto;
+  }
+}
+
+.content {
+  width: 100%;
+}
+.card {
+  padding: 1rem;
+  border-radius: 20px;
+  background: #f8f8f8;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.25);
+}
+
+.image {
+  width: 100%;
+  aspect-ratio: 2/1;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+.title {
+  margin: 12px 0 0 0px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 10px;
+  margin: 6px 0 20px 0px;
+  color: #000000;
+}
+
+.pointer {
+  height: 1.7rem;
+  width: 1.7rem;
+  border-radius: 50%;
+  background-color: #482fe2;
+}
+
+
