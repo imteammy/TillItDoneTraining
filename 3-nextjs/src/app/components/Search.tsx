@@ -5,7 +5,7 @@ export const Search = (props: { onClick: (value:string) => void} ) => {
   const [keyword, setKeyword] = useState<string>('');
 
   return (
-    <div className="mx-24 mt-12 s:mx-9 md:mx-24 lg:mx-24">
+    <div className="mx-24 mt-12 s:mx-9 md:mx-24 lg:mx-24 w-100">
       <div className="grid grid-cols-3 gap-x-4">
         <input onChange={(value)=> { setKeyword(value.target.value) }}
           className="p-3 col-span-2 border-2 rounded-2xl"

@@ -25,7 +25,8 @@ export default function Home() {
     <>
       <Search onClick={ searchCart }/>
       <div className="mt-10 md:px-16">
-        <div className="justify-center p- 9">
+
+        <div className="grid justify-center">
           <div className="grid justify-center gap-8 sm:grid-cols-2 md:grid-cols-3">
             {dataSearch.map((result, key) => (
               <Cart
